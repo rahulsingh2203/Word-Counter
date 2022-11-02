@@ -4,7 +4,12 @@ const check = () =>{
     let arr = input.split(" ");
     let count = arr.length;
     let h3 = document.getElementById("h3");
-    h3.innerHTML = `Total words present are : ${count}`;
+    if(count === 1 && arr[0]===""){
+        h3.innerHTML = `Total words present are 0`;
+    }
+    else{
+        h3.innerHTML = `Total words present are : ${count}`;
+    }
     console.log(arr);
 }
 
